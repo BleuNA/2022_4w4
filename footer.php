@@ -43,10 +43,12 @@
          </nav>
 
          <section class="site__info2__droit">
-             <p>Copyright 2022 - College de Maisonneuve.</p>
+             <p>Copyright 2022 - College de Maisonneuve.</p>     
+                <?php wp_nav_menu( array("menu" => "simple", 
+                                    "container" => "nav")); ?>
          </section>
      </div>
-     <?php wp_footer(); ?>
+    <?php wp_footer(); ?>
 </body>
 </html>
 

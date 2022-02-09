@@ -15,9 +15,14 @@ add_action("wp_enqueue_scripts", "cidw_4w4_enqueue");
 
 
 function cidw_4w4_enregistre_mon_menu() {
-    register_nav_menu( 'principal', __( 'menu_principal', 'cidw_4w4' ) );
+    register_nav_menus(
+        array (
+        'principal' => __( 'menu_principal', 'cidw_4w4' ),
+        'footer' => __('Menu secondaire', 'cidw_4w4'))
+    );
 }
 add_action( 'after_setup_theme', 'cidw_4w4_enregistre_mon_menu' );
+
 
 /* ------ filtré chacun ------*/
 function cidw_4w4_filtre_le_menu($mon_object){
