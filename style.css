@@ -344,14 +344,14 @@ html {
 .site {
   background-color: #c57d7d;
   display: grid;
-  gap: 10px;
   grid-template-columns: auto;
   grid-template-areas: "barre"  "header" "main" "footer";
 }
 
 @media screen and (min-width: 500px) {
   .site {
-    grid-template-columns: 350px auto;
+    gap: 10px;
+    grid-template-columns: 320px auto;
     grid-template-areas: "header header" "barre main" "footer footer";
   }
 }
@@ -491,7 +491,7 @@ COMPOSANTS
 .site__header__titre h2 {
   margin: 35px;
   font-family: "Arial , sans-serif";
-  font-size: clamp(1.2rem, 2vw, 6rem);
+  font-size: clamp(1rem, 4.3vw, 2.7rem);
 }
 
 .site__header__util {
