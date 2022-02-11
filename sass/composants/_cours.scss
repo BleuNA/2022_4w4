@@ -5,12 +5,14 @@
     justify-content: space-evenly;
     row-gap: 20px;
 }
+
 .main__titre {
     font-size: 2rem;
     width: 100%;
     display: block;
-
+    text-align: center;
 }
+
 .carte {
     display: flex;
     flex-direction: column;
@@ -27,10 +29,12 @@
         width:28%;
     }
 }
+
 .carte__titre {
     font-size: 1.5rem;
     color: DimGrey;
 }
+
 .carte__contenu {
     font-size: 0.8rem;
     color: DimGrey;

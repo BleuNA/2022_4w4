@@ -1,3 +1,8 @@
+/* Le minimum pour le HTML */
+html{
+    min-width: 350px ;
+}
+
 /* points de rupture pour les media query */
 $largeur__media-tablette : 500px;
 $largeur__media-desktop : 1000px;

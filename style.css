@@ -333,6 +333,11 @@ html {
 /* -----------------------------------------------------------------
 VARIABLES
 ------------------------------------------------------------------- */
+/* Le minimum pour le HTML */
+html {
+  min-width: 350px;
+}
+
 /* points de rupture pour les media query */
 /*layout général*/
 /* -------------------LAYOUT---------- */
@@ -381,12 +386,12 @@ ELEMENTS
 a {
   display: flex;
   flex-direction: column;
-  color: #4169e1;
+  color: #17ca4a;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 a:visited {
-  color: #800080;
+  color: #c802c8;
 }
 
 a:hover, a:focus, a:active {
@@ -480,13 +485,13 @@ COMPOSANTS
 .site__header__titre h1 {
   margin: 0;
   font-family: "Poppins, sans-serif";
-  font-size: clamp(1rem, 6vw, 12rem);
+  font-size: clamp(3rem, 6vw, 12rem);
 }
 
 .site__header__titre h2 {
   margin: 35px;
   font-family: "Arial , sans-serif";
-  font-size: clamp(0.8rem, 3vw, 5rem);
+  font-size: clamp(1.2rem, 2vw, 6rem);
 }
 
 .site__header__util {
@@ -501,6 +506,7 @@ COMPOSANTS
 
 .site__header__util .icone__lien {
   background: none;
+  color: #17ca4a;
 }
 
 .site__header__util .recherche {
@@ -514,6 +520,12 @@ COMPOSANTS
   border: none;
   padding: 2px;
   box-sizing: content-box;
+}
+
+@media screen and (max-width: 500px) {
+  .site__header__util .recherche__input {
+    width: 300px;
+  }
 }
 
 .site__header__util .recherche__bouton {
@@ -537,6 +549,7 @@ COMPOSANTS
   font-size: 2rem;
   width: 100%;
   display: block;
+  text-align: center;
 }
 
 .carte {

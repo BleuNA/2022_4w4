@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <main class="site__main">
-<h2 class="main__titre">list des cours</h2>
+<h2 class="main__titre">liste des cours</h2>
     <?php if (have_posts()): ?>
         <?php while (have_posts()): the_post(); ?>
             <?php 
