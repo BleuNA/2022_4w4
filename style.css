@@ -597,6 +597,9 @@ COMPOSANTS
 }
 
 @media screen and (min-width: 1000px) {
+  .site__info__liens {
+    margin-top: 17px;
+  }
   .site__info__liens, .site__info__nouvelle {
     padding-left: 20px;
   }
@@ -614,6 +617,7 @@ COMPOSANTS
 @media screen and (min-width: 1000px) {
   .site__info2__menu {
     padding-right: 20px;
+    margin-top: 17px;
   }
 }
 /*# sourceMappingURL=style.css.map */
