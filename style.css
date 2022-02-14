@@ -2,6 +2,7 @@
 /**
 Theme name: Exercice Damien Dufresne
 Author: Damien Dufresne
+Author URI: https://github.com/BleuNA/2022_4w4_Exercice_1
 Description: Exercice dans le cadre du cours 4W4
 Version: 1.0
 Requires PHP: 7.1
@@ -345,14 +346,19 @@ html {
   background-color: #c57d7d;
   display: grid;
   grid-template-columns: auto;
-  grid-template-areas: "barre"  "header" "main" "footer";
+  grid-template-areas: "barre" 
+ "header"
+ "main"
+ "footer";
 }
 
 @media screen and (min-width: 500px) {
   .site {
     gap: 10px;
     grid-template-columns: 320px auto;
-    grid-template-areas: "header header" "barre main" "footer footer";
+    grid-template-areas: "header header"
+ "barre main"
+ "footer footer";
   }
 }
 
