@@ -1,6 +1,13 @@
 @charset "UTF-8";
-/*
-theme name: Exer-1 gr3
+/**
+Theme name: lab4-damien-dufresne
+Author: yannick langlois
+Author URI: https://github.com/BleuNA/2022_4w4
+Description: Exercice dans le cadre du cours 4W4
+Version: 1.0
+Requires PHP: 7.1
+License: GNU General Public License v2 or later
+Text Domain: cidw-4w4
 */
 /* ---------------------------------------------------------
 VARIABLES
@@ -515,6 +522,28 @@ COMPOSANTES
   padding: 15px;
 }
 
+.site__footer__info1 {
+  display: flex;
+  justify-content: center;
+}
+
+.site__footer__info1 .elem {
+  width: 20%;
+  border: 1px solid #fff;
+}
+
+.site__footer__info1 .elem__h2 {
+  background-color: #bbb;
+}
+
+.site__footer__info1 .elem__h3 {
+  background-color: #cc4a4a;
+}
+
+.site__footer__info1 .elem__p {
+  background-color: #0d78cf;
+}
+
 .site__footer__menu__ul {
   display: flex;
   list-style-type: none;
@@ -532,7 +561,15 @@ COMPOSANTES
 }
 
 .site__footer__menu__ul .menu-item a svg {
-  color: aqua;
+  color: #f40b0b;
+}
+
+.site__footer__menu__ul .menu-item a:hover svg {
+  color: #19e123;
+}
+
+.site__footer__menu__ul .menu-item a__visited svg {
+  color: #1435eb;
 }
 
 .footer__titre,
