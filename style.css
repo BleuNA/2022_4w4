@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /**
-Theme name: lab4-damien-dufresne
-Author: yannick langlois
+Theme name: exercice2-damien-dufresne
+Author: Damien Dufresne
 Author URI: https://github.com/BleuNA/2022_4w4
 Description: Exercice dans le cadre du cours 4W4
 Version: 1.0
@@ -15,6 +15,7 @@ VARIABLES
 /* ---------------- BACKGROUND */
 /* ---------------- LIENS */
 /* ---------------- LIENS FOOTER */
+/* ---------------- LIENS HEADER titre principal du site */
 /* ---------------- FONT */
 /* ------------------------------------- points de rupture des media queries */
 /* ---------------------------------------------------------
@@ -384,13 +385,32 @@ a:hover, a:active {
   outline: 0;
 }
 
+.header__titre a {
+  color: #f06a6a;
+}
+
+.header__titre a:visited {
+  color: #7a49d4;
+}
+
+.header__titre a:hover, .header__titre a:focus, .header__titre a:active {
+  color: #8be58f;
+}
+
+.header__titre a:focus {
+  outline: thin dotted;
+}
+
+.header__titre a:hover, .header__titre a:active {
+  outline: 0;
+}
+
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
-.principal {
-  margin: 20px;
+.site__main {
   padding: 10px 15px;
-  background-color: #eca7a7;
+  background-color: #d5e6f1;
   border-radius: 5px;
   box-shadow: #39443e 1px -1px 10px;
 }
@@ -402,7 +422,7 @@ COMPOSANTES
 
 .formation__titre {
   font-size: 2rem;
-  color: #443936;
+  color: #ebcac1;
   margin: 10px 0px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
@@ -413,7 +433,7 @@ COMPOSANTES
 }
 
 .formation__cours {
-  background-color: #ffd6d1;
+  background-color: #d1e9ff;
   box-shadow: #394044 1px -1px 10px;
   border-radius: 5px;
   margin: 10px;
@@ -437,7 +457,7 @@ COMPOSANTES
 
 .cours__titre {
   font-size: 1.5rem;
-  color: #443936;
+  color: #ebcac1;
   margin: 5px 0px;
 }
 
@@ -452,7 +472,7 @@ COMPOSANTES
 }
 
 .site__header {
-  background-color: #594036;
+  background-color: #6faee2;
   color: #fa9292;
   padding-left: 10px;
 }
@@ -462,7 +482,7 @@ COMPOSANTES
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-.site__header .header__desc {
+.site__header .header__description {
   font-size: 1.5rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
@@ -500,11 +520,11 @@ COMPOSANTES
   display: block;
   text-decoration: none;
   padding: 4px;
-  background-color: #ffa3a3;
+  background-color: #8293e3;
 }
 
 .menu-item a:hover {
-  background-color: #ffd1d1;
+  background-color: #2832b8;
 }
 
 @media screen and (min-width: 800px) {
@@ -518,30 +538,8 @@ COMPOSANTES
 
 .site__footer {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  background-color: #2f2a28;
+  background-color: #07143b;
   padding: 15px;
-}
-
-.site__footer__info1 {
-  display: flex;
-  justify-content: center;
-}
-
-.site__footer__info1 .elem {
-  width: 20%;
-  border: 1px solid #fff;
-}
-
-.site__footer__info1 .elem__h2 {
-  background-color: #bbb;
-}
-
-.site__footer__info1 .elem__h3 {
-  background-color: #cc4a4a;
-}
-
-.site__footer__info1 .elem__p {
-  background-color: #0d78cf;
 }
 
 .site__footer__menu__ul {
@@ -568,10 +566,6 @@ COMPOSANTES
   color: #19e123;
 }
 
-.site__footer__menu__ul .menu-item a__visited svg {
-  color: #1435eb;
-}
-
 .footer__titre,
 .footer__presentation,
 .footer__author {
@@ -579,39 +573,106 @@ COMPOSANTES
   text-align: center;
 }
 
+.erreur-404 {
+  background-color: #c21e1e;
+}
+
+.erreur-404 h1 {
+  font-size: 5rem;
+}
+
+.erreur-404 h1 h2 {
+  font-size: 3rem;
+}
+
+.erreur-404 h1 h2 p {
+  font-size: 2rem;
+}
+
+/* ---------------------------------------------------------
+ANIMATION
+--------------------------------------------------------- */
+.animation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.animation__bloc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #1161f7;
+  color: #fff;
+  font-size: 3rem;
+  transform: -100vh;
+}
+
+.animation__bloc:nth-child(1) {
+  animation: anim-entete 1s 0s forwards;
+}
+
+.animation__bloc:nth-child(2) {
+  animation: anim-entete 1s .25s forwards;
+}
+
+.animation__bloc:nth-child(3) {
+  animation: anim-entete 1s .5s forwards;
+}
+
+.animation__bloc:nth-child(4) {
+  animation: anim-entete 1s .75s forwards;
+}
+
+.animation__bloc:nth-child(5) {
+  animation: anim-entete 1s 1s forwards;
+}
+
+@keyframes anim-entete {
+  0% {
+    transform: translateY(-100vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
 /*
-theme name: Lab 2 Lemieux Florence
+theme name: Exercice 2 Damien
 */
 .site {
-  background-color: #957365;
+  background-color: #dae0f1;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .site__header {
   grid-area: header;
-  background-color: #594036;
+  background-color: #6faee2;
 }
 
 .site__barre {
   grid-area: sidebar;
-  background-color: #ff8585;
+  background-color: #051d29;
 }
 
 .site__main {
   grid-area: main;
-  background-color: #eca7a7;
+  background-color: #d5e6f1;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #2f2a28;
+  background-color: #07143b;
 }
 
 .site {
   display: grid;
+  gap: 10px;
   grid-template-columns: auto;
   grid-template-areas: "sidebar" "header" "main" "footer";
 }

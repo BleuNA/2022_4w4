@@ -2,59 +2,37 @@
     font-family: $font__titre;
     background-color: $color__background-footer;
     padding: 15px;
-      &__info1{
-        display: flex;
-        justify-content: center;
-        .elem{ // .site_footer_info1 .elem
-          width: 20%;
-          border: 1px solid #fff;
-        
-        &__h2{ // .site_footer_info1 .elem__h2
-          background-color: #bbb;
-        }
-        &__h3{ // .site_footer_info1 .elem__h3
-          background-color: rgb(204, 74, 74);
-        }
-        &__p{ // .site_footer_info1 .elem__p
-          background-color: rgb(13, 120, 207);
-        }
-      }
-}
+
     &__menu{ // .site__footer__menu
 
       &__ul{ // .site__footer__menu__ul
           display : flex;
           list-style-type: none;
           justify-content: center;
-          .menu-item{ // .site__footer__menu__ul .menu-item
+          .menu-item { // .site__footer__menu__ul .menu-item
               margin : 10px 5px;
             a{ // .site__footer__menu__ul .menu-item a
               display : flex;
               align-items: center;
               padding : 3px;
-              svg { // .site__footer__menu__ul .menu-item a svg
-                color: $color__link__footer;
-              }
-              &:hover{
-                svg{
+                svg { // .site__footer__menu__ul .menu-item a svg
+                  color: $color__link__footer;
+                }
+           
+              &:hover {
+                svg { // .site__footer__menu__ul .menu-item a svg
                   color: $color__link__footer-hover;
                 }
               }
-              &__visited{
-                svg{
-                  color: $color__link__footer-visited;
-                }
-              }
             }
-          }
-      }
+          }    
+       }
     }
   }
+
 .footer__titre,
 .footer__presentation,
 .footer__author {
   color: $color__font-footer;
   text-align: center;
 }
-
-

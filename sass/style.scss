@@ -1,6 +1,6 @@
 /**
-Theme name: lab4-damien-dufresne
-Author: yannick langlois
+Theme name: exercice2-damien-dufresne
+Author: Damien Dufresne
 Author URI: https://github.com/BleuNA/2022_4w4
 Description: Exercice dans le cadre du cours 4W4
 Version: 1.0
@@ -33,7 +33,11 @@ COMPOSANTES
 @import "composantes/header";
 @import "composantes/navigation";
 @import "composantes/footer";
-
+@import "composantes/erreur_404";
+/* ---------------------------------------------------------
+ANIMATION
+--------------------------------------------------------- */
+@import "animation/entete";
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
