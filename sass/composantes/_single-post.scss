@@ -1,0 +1,13 @@
+.cours{
+    &__titre{
+        color: red;
+    }
+
+    section{
+        display: flex;
+        justify-content: space-between;
+        img{}
+
+        p{}
+    }
+}

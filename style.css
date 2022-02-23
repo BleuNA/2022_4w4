@@ -475,16 +475,28 @@ COMPOSANTES
   background-color: #6faee2;
   color: #fa9292;
   padding-left: 10px;
+  display: flex;
+  align-items: center;
 }
 
-.site__header .header__titre {
+.header__titre {
   font-size: 3em;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-.site__header .header__description {
+.header__description {
   font-size: 1.5rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.util {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.util__menu {
+  display: flex;
 }
 
 #burger {
@@ -503,6 +515,10 @@ COMPOSANTES
 
 #chk-burger:checked ~ .menu-principal-container {
   display: block;
+}
+
+.menu-principal-container {
+  color: brown;
 }
 
 .menu {
@@ -587,6 +603,15 @@ COMPOSANTES
 
 .erreur-404 h1 h2 p {
   font-size: 2rem;
+}
+
+.cours__titre {
+  color: red;
+}
+
+.cours section {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* ---------------------------------------------------------

@@ -16,7 +16,9 @@
 }
 
 
-.menu-principal-container{}
+.menu-principal-container{
+    color: brown;
+}
 .menu{
     list-style-type: none;
     margin : 0;
@@ -39,6 +41,7 @@
 @media screen and (min-width : $largeur__media--tablette){
     #burger {
         display : none;
+        
     }
     .menu-principal-container {
         display : block;
