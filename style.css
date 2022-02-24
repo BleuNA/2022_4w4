@@ -346,15 +346,15 @@ html {
 ÉLÉMENTS
 --------------------------------------------------------- */
 a {
-  color: #7b5647;
+  color: #ade9f4;
 }
 
 a:visited {
-  color: #5c4033;
+  color: #99cdd6;
 }
 
 a:hover, a:focus, a:active {
-  color: white;
+  color: #ee6d16;
 }
 
 a:focus {
@@ -366,7 +366,7 @@ a:hover, a:active {
 }
 
 .site__footer a {
-  color: #f40b0b;
+  color: #d1e9ff;
 }
 
 .site__footer a:visited {
@@ -478,8 +478,8 @@ COMPOSANTES
 }
 
 .site__header {
-  background-color: #6faee2;
-  color: #fa9292;
+  background-color: #ade9f4;
+  color: #ee6d16;
   padding-left: 10px;
   display: flex;
   align-items: center;
@@ -547,11 +547,11 @@ COMPOSANTES
   display: block;
   text-decoration: none;
   padding: 4px;
-  background-color: #8293e3;
+  background-color: #e78e53;
 }
 
 .menu-item a:hover {
-  background-color: #2832b8;
+  background-color: #ade9f4;
 }
 
 @media screen and (min-width: 800px) {
@@ -586,7 +586,7 @@ COMPOSANTES
 }
 
 .site__footer__menu__ul .menu-item a svg {
-  color: #f40b0b;
+  color: #d1e9ff;
 }
 
 .site__footer__menu__ul .menu-item a:hover svg {
@@ -596,7 +596,7 @@ COMPOSANTES
 .footer__titre,
 .footer__presentation,
 .footer__author {
-  color: #ffcabc;
+  color: #99cdd6;
   text-align: center;
 }
 
@@ -640,8 +640,8 @@ ANIMATION
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: #1161f7;
-  color: #fff;
+  background-color: #99cdd6;
+  color: #ee6d16;
   font-size: 3rem;
   transform: -100vh;
 }
@@ -670,6 +670,9 @@ ANIMATION
   0% {
     transform: translateY(-100vh);
   }
+  50% {
+    transform: translateY(-15vh);
+  }
   100% {
     transform: translateY(0);
   }
@@ -688,7 +691,7 @@ theme name: Exercice 2 Damien
 
 .site__header {
   grid-area: header;
-  background-color: #6faee2;
+  background-color: #ade9f4;
 }
 
 .site__barre {
