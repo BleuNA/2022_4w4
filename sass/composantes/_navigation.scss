@@ -14,10 +14,14 @@
 #chk-burger:checked ~ .menu-principal-container{
     display : block;
 }
+#chk-burger {
+    display: none;
+}
 
 
 .menu-principal-container{
     color: brown;
+    padding-top: 38px;
 }
 .menu{
     list-style-type: none;
@@ -40,8 +44,7 @@
 
 @media screen and (min-width : $largeur__media--tablette){
     #burger {
-        display : none;
-        
+        display : none; 
     }
     .menu-principal-container {
         display : block;

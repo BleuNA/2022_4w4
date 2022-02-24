@@ -13,7 +13,7 @@
     <?php wp_head() ?>
     <?php show_admin_bar(true); ?>
 </head>
-<body  <?php body_class("site"); ?>>
+<body <?php body_class("site"); ?>>
 <header class="site__header">
     <h1 class="header__titre">
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">    

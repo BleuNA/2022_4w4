@@ -1,3 +1,8 @@
+@media screen and (min-width : $largeur__media--tablette) {
+    html {
+        margin-top: 32px;
+    }
+}
 .site__main {
     
     padding: 10px 15px;

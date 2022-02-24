@@ -18,6 +18,7 @@ theme name: Exercice 2 Damien
 .site__barre{
     grid-area: sidebar;
     background-color: $color__background-barre;
+    padding-bottom: 35px;
 }
 
 .site__main{

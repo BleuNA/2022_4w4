@@ -408,6 +408,12 @@ a:hover, a:active {
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
+@media screen and (min-width: 800px) {
+  html {
+    margin-top: 32px;
+  }
+}
+
 .site__main {
   padding: 10px 15px;
   background-color: #d5e6f1;
@@ -517,8 +523,13 @@ COMPOSANTES
   display: block;
 }
 
+#chk-burger {
+  display: none;
+}
+
 .menu-principal-container {
   color: brown;
+  padding-top: 38px;
 }
 
 .menu {
@@ -683,6 +694,7 @@ theme name: Exercice 2 Damien
 .site__barre {
   grid-area: sidebar;
   background-color: #051d29;
+  padding-bottom: 35px;
 }
 
 .site__main {
