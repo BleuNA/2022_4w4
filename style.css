@@ -17,7 +17,11 @@ VARIABLES
 /* ---------------- LIENS FOOTER */
 /* ---------------- LIENS HEADER titre principal du site */
 /* ---------------- FONT */
+/* ---------------- SEARCH */
+/*----------------- BUTTON */
 /* ------------------------------------- points de rupture des media queries */
+/* ----- Bordure de la zone de texte de la recherche */
+/* ----- Bordure de la zone du bouton de la recherche */
 /* ---------------------------------------------------------
 INITIALISATION
 --------------------------------------------------------- */
@@ -493,6 +497,7 @@ COMPOSANTES
 .header__description {
   font-size: 1.5rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-left: 15px;
 }
 
 .util {
@@ -616,6 +621,34 @@ COMPOSANTES
   font-size: 2rem;
 }
 
+.recherche {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+
+.recherche__text {
+  height: 30px;
+  border-right: none;
+  background-color: #ade9f4;
+  border-left: 3px dashed #e78e53;
+  color: #ee6d16;
+  border-top: 3px dotted #e78e53;
+  border-bottom: 3px solid #e78e53;
+  background-color: #ade9f4;
+  outline: none;
+}
+
+.recherche__submit {
+  background-color: transparent;
+  border-left: none;
+  border-right: 3px dotted #ade9f4;
+  color: #ee6d16;
+  border-top: 3px #07143b;
+  border-bottom: 3px dashed #ade9f4;
+  background-color: #07143b;
+}
+
 .cours__titre {
   color: red;
 }
@@ -668,10 +701,10 @@ ANIMATION
 
 @keyframes anim-entete {
   0% {
-    transform: translateY(-100vh);
+    transform: translateY(-70vh);
   }
   50% {
-    transform: translateY(-15vh);
+    transform: translateY(-10vh);
   }
   100% {
     transform: translateY(0);

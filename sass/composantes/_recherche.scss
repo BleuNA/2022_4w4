@@ -1,8 +1,43 @@
+@mixin border($color,
+             $color--background,
+             $border--top,
+             $border--bottom)
+{
+color: $color;
+border-top: $border--top;
+border-bottom: $border--bottom;
+background-color: $color--background;
+}
+
+
 .recherche{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    &__text {
+        height: 30px;
+        border-right: none;
+        background-color: $color__background__search__texte;
+        border-left: $border__text__left;
 
-    &__text {}
-
-    &__submit {
-        svg{}
+        @include border($color__search__text,
+        $color__background__search__texte,
+        $border__text__top,
+        $border__text__bottom);
+        outline: none;
     }
+    
+    &__submit{
+        background-color: transparent;
+        border-left : none;  
+        border-right : $border__button__right;  
+
+        @include border($color__search__boutton,
+        $color__background__search__boutton,
+        $border__button__top,
+        $border__button__bottom);
+
+    }
+        svg{
+        }
 }

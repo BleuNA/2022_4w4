@@ -1,5 +1,5 @@
 <footer class="site__footer">
-    <h2 class="footer__titre">Le beau footer</h2>
+    <h2 class="footer__titre">La différence c'est le texte!</h2>
     <p class="footer__presentation">Un site web fait par un élève du TIM à l'aide de Wordpress.</p>
     <h3 class="footer__author">Amélioré par Damien Dufresne</h3>
 <?php 
