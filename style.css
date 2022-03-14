@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /**
-Theme name: exercice2-damien-dufresne
+Theme name: TP1-damien-dufresne
 Author: Damien Dufresne
 Author URI: https://github.com/BleuNA/2022_4w4
 Description: Exercice dans le cadre du cours 4W4
@@ -486,11 +486,29 @@ COMPOSANTES
   color: #ee6d16;
   padding-left: 10px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
 }
 
+@media screen and (min-width: 700px) {
+  .site__header {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+.site__header__titre {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/*.custom-logo-link, .header__titre, .header__description{
+      padding-left: 15px;
+    }*/
 .header__titre {
-  font-size: 3em;
+  font-size: clamp(1rem, 3vw, 5rem);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
@@ -501,9 +519,16 @@ COMPOSANTES
 }
 
 .util {
-  margin-left: auto;
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+
+@media screen and (min-width: 700px) {
+  .util {
+    margin-left: auto;
+    width: 20%;
+  }
 }
 
 .util__menu {
@@ -560,11 +585,17 @@ COMPOSANTES
 }
 
 @media screen and (min-width: 800px) {
-  #burger {
+  .site #burger {
     display: none;
   }
-  .menu-principal-container {
+  .site .menu-principal-container {
     display: block;
+  }
+  .home #burger {
+    display: block;
+  }
+  .home .menu-principal-container {
+    display: none;
   }
 }
 
@@ -660,21 +691,30 @@ COMPOSANTES
   height: 30px;
   border-right: none;
   background-color: #ade9f4;
-  border-left: 3px dashed #e78e53;
+  border-left: 3px solid #e78e53;
+  width: 90%;
   color: #ee6d16;
-  border-top: 3px dotted #e78e53;
+  border-top: 3px solid #e78e53;
   border-bottom: 3px solid #e78e53;
   background-color: #ade9f4;
   outline: none;
 }
 
+@media screen and (min-width: 700px) {
+  .recherche__text {
+    width: 300px;
+  }
+}
+
 .recherche__submit {
+  display: flex;
+  align-items: center;
   background-color: transparent;
   border-left: none;
-  border-right: 3px dotted #ade9f4;
+  border-right: 2px solid #07143b;
   color: #ee6d16;
-  border-top: 3px #07143b;
-  border-bottom: 3px dashed #ade9f4;
+  border-top: 2px solid #07143b;
+  border-bottom: 2px solid #07143b;
   background-color: #07143b;
 }
 
@@ -744,11 +784,24 @@ ANIMATION
 LAYOUT
 --------------------------------------------------------- */
 /*
-theme name: Exercice 2 Damien
+theme name: TP 1 Damien
 */
 .site {
   background-color: #dae0f1;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.home::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
+  z-index: -1;
 }
 
 .site__header {
@@ -783,6 +836,12 @@ theme name: Exercice 2 Damien
   .site {
     grid-template-columns: 300px auto;
     grid-template-areas: "header header" "sidebar main" "footer footer";
+  }
+  .home {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto;
+    grid-template-areas: "sidebar" "header" "main" "footer";
   }
 }
 /*# sourceMappingURL=style.css.map */

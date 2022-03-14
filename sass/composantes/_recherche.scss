@@ -19,7 +19,11 @@ background-color: $color--background;
         border-right: none;
         background-color: $color__background__search__texte;
         border-left: $border__text__left;
+        width: 90%;
 
+        @media screen and (min-width: 700px) {
+            width: 300px;
+        }
         @include border($color__search__text,
         $color__background__search__texte,
         $border__text__top,
@@ -28,6 +32,8 @@ background-color: $color--background;
     }
     
     &__submit{
+        display: flex;
+        align-items: center;
         background-color: transparent;
         border-left : none;  
         border-right : $border__button__right;  

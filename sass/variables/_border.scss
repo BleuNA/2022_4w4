@@ -1,10 +1,10 @@
 /* ----- Bordure de la zone de texte de la recherche */
-$border__text__top : 3px dotted #e78e53;
-$border__text__left : 3px dashed #e78e53; 
+$border__text__top : 3px solid #e78e53;
+$border__text__left : 3px solid #e78e53; 
 $border__text__bottom : 3px solid #e78e53;
 
 /* ----- Bordure de la zone du bouton de la recherche */
-$border__button__top : 3px hsl(225, 78%, 13%);
-$border__button__right : 3px dotted #ade9f4; 
-$border__button__bottom : 3px dashed #ade9f4;
+$border__button__top : 2px solid hsl(225, 78%, 13%);
+$border__button__right : 2px solid hsl(225, 78%, 13%); 
+$border__button__bottom : 2px solid hsl(225, 78%, 13%);
 

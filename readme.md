@@ -1,6 +1,6 @@
-# Exrcice #2 - 4W4 - Conception d'interface et développement Web
+# TP #1 - 4W4 - Conception d'interface et développement Web
 ### Auteur : Damien Dufresne
-### Date de remise : 25 février 2022
+### Date de remise : 18 Mars 2022
 
 ```
 Cet exercice nous a permis d'introduire la structure d'un thème Wordpress. Voici la structure utilisée:
