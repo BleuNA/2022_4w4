@@ -28,6 +28,9 @@
     section{
       
     }
+    .menu-item-140{
+      list-style: none;
+    }
     .footer__description{}
     .footer__auteur{}
     .footer__copyright{}
@@ -39,7 +42,7 @@
             list-style-type: none;
             justify-content: center;
             .menu-item { // .site__footer__menu__ul .menu-item
-                margin : 10px 5px;
+                margin : 10px 5px;  
               a{ // .site__footer__menu__ul .menu-item a
                 display : flex;
                 align-items: center;
@@ -58,7 +61,12 @@
          }
       }
     }
-    .footer__recherche{}
+    .footer__recherche{
+      padding-left: 9%;
+      @media screen and (min-width: 300px) {
+        padding-left: 10%;
+      }
+    }
   }
 }
 

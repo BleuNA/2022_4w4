@@ -41,7 +41,7 @@ function cidw_4w4_add_theme_support() {
     ));
  }
 
-add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
+add_action( 'after_setup_theme', 'cidw_4w4_add_theme_support' );
 
 
 function remove_admin_login_header() {     remove_action('wp_head', '_admin_bar_bump_cb'); } add_action('get_header', 'remove_admin_login_header');

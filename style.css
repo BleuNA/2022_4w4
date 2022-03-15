@@ -624,6 +624,10 @@ COMPOSANTES
   align-items: center;
 }
 
+.site__footer__ligne .menu-item-140 {
+  list-style: none;
+}
+
 .site__footer__ligne .footer__menu__nav__ul {
   display: flex;
   list-style-type: none;
@@ -646,6 +650,16 @@ COMPOSANTES
 
 .site__footer__ligne .footer__menu__nav__ul .menu-item a:hover svg {
   color: #19e123;
+}
+
+.site__footer__ligne .footer__recherche {
+  padding-left: 9%;
+}
+
+@media screen and (min-width: 300px) {
+  .site__footer__ligne .footer__recherche {
+    padding-left: 10%;
+  }
 }
 
 /*
