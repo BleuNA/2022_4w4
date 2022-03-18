@@ -91,7 +91,19 @@ function my_register_sidebars() {
         array(
             'id'            => 'pied_page_ligne_1',
             'name'          => __( 'pied de page ligne 1' ),
-            'description'   => __( 'A short description of the sidebar.' ),
+            'description'   => __( 'les liens vers des sites connexes' ),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3 class="widget-title">',
+            'after_title'   => '</h3>',
+        )
+    );
+
+    register_sidebar(
+        array(
+            'id'            => 'haut_page_ligne_1',
+            'name'          => __( 'haut de page ligne 1' ),
+            'description'   => __( 'Pour les applications au dessus de la bare de recherche.' ),
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
             'after_widget'  => '</div>',
             'before_title'  => '<h3 class="widget-title">',
