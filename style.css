@@ -412,7 +412,7 @@ a:hover, a:active {
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   html {
     margin-top: 32px;
   }
@@ -453,7 +453,7 @@ COMPOSANTES
   padding: 10px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   .formation__cours {
     width: 45%;
   }
@@ -535,6 +535,16 @@ COMPOSANTES
   display: flex;
 }
 
+.wp-block-social-links {
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.is-style-logos-only {
+  padding: 0;
+  margin: 0;
+}
+
 #burger {
   position: absolute;
   transition: transform .3s;
@@ -584,7 +594,7 @@ COMPOSANTES
   background-color: #ade9f4;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   .site #burger {
     display: none;
   }
@@ -626,6 +636,10 @@ COMPOSANTES
 
 .site__footer__ligne .menu-item-140 {
   list-style: none;
+}
+
+.site__footer__ligne .footer__description {
+  padding-top: 6px;
 }
 
 .site__footer__ligne .footer__menu__nav__ul {
@@ -846,7 +860,7 @@ theme name: TP 1 Damien
   grid-template-areas: "sidebar" "header" "main" "footer";
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   .site {
     grid-template-columns: 300px auto;
     grid-template-areas: "header header" "sidebar main" "footer footer";
