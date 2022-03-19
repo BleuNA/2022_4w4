@@ -13,6 +13,7 @@ Text Domain: cidw-4w4
 VARIABLES
 --------------------------------------------------------- */
 /* ---------------- BACKGROUND */
+/*------------------ BOX-SHADOW */
 /* ---------------- LIENS */
 /* ---------------- LIENS FOOTER */
 /* ---------------- LIENS HEADER titre principal du site */
@@ -354,7 +355,7 @@ a {
 }
 
 a:visited {
-  color: #99cdd6;
+  color: #8ebec7;
 }
 
 a:hover, a:focus, a:active {
@@ -444,7 +445,7 @@ COMPOSANTES
 
 .formation__cours {
   background-color: #d1e9ff;
-  box-shadow: #394044 1px -1px 10px;
+  box-shadow: #6a460b 2px -2px 12px;
   border-radius: 5px;
   margin: 10px;
   display: flex;
@@ -634,12 +635,16 @@ COMPOSANTES
   align-items: center;
 }
 
-.site__footer__ligne .menu-item-140 {
+.site__footer__ligne .menu-item {
   list-style: none;
 }
 
 .site__footer__ligne .footer__description {
   padding-top: 6px;
+}
+
+.site__footer__ligne .footer__menu__nav {
+  display: flex;
 }
 
 .site__footer__ligne .footer__menu__nav__ul {
@@ -674,6 +679,15 @@ COMPOSANTES
   .site__footer__ligne .footer__recherche {
     padding-left: 10%;
   }
+}
+
+#menu-simple {
+  display: flex;
+}
+
+.menu-item-object-page {
+  margin-left: 10px;
+  text-align: center;
 }
 
 /*
@@ -802,6 +816,29 @@ ANIMATION
   }
   50% {
     transform: translateY(-10vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.formation__titre {
+  animation: titre .9s ease-in-out;
+  animation-delay: .5;
+}
+
+@keyframes titre {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-4vh);
+  }
+  50% {
+    transform: translateY(0vh);
+  }
+  75% {
+    transform: translateY(-2vh);
   }
   100% {
     transform: translateY(0);

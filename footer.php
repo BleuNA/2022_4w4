@@ -20,7 +20,7 @@ wp_nav_menu(array(
                     "link_before"=>$icone)); ?>
 </section>             
     <section class="footer__recherche"><?php get_search_form(); ?></section>
-    <section class="footer__auteur">Auteur : Damien</section>
+    <section class="footer__auteur">Auteur : Damien Dufresne</section>
     </div>
 </footer>
 

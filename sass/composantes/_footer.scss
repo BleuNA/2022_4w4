@@ -28,7 +28,7 @@
     section{
       
     }
-    .menu-item-140{
+    .menu-item{
       list-style: none;
     }
     .footer__description{
@@ -38,13 +38,13 @@
     .footer__copyright{}
     .footer__menu{
       &__nav{ // .site__footer__menu
-
+        display: flex;
         &__ul{ // .site__footer__menu__ul
             display : flex;
             list-style-type: none;
             justify-content: center;
             .menu-item { // .site__footer__menu__ul .menu-item
-                margin : 10px 5px;  
+                margin : 10px 5px; 
               a{ // .site__footer__menu__ul .menu-item a
                 display : flex;
                 align-items: center;
@@ -71,7 +71,13 @@
     }
   }
 }
-
+#menu-simple{
+  display: flex;
+}
+.menu-item-object-page{
+  margin-left: 10px;
+  text-align: center;
+}
 /*
 
 .site__footer {

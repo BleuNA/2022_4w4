@@ -43,3 +43,26 @@
         transform : translateY(0);
     }
 }
+
+.formation__titre{
+    animation: titre .9s ease-in-out;
+    animation-delay: .5;
+}
+
+@keyframes titre{
+    0%{
+        transform: translateY(0);
+    }
+    25%{
+        transform: translateY(-4vh);
+    }
+    50%{
+        transform: translateY(0vh);
+    }
+    75%{
+        transform: translateY(-2vh);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
