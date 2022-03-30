@@ -20,6 +20,7 @@ VARIABLES
 /* ---------------- FONT */
 /* ---------------- SEARCH */
 /*----------------- BUTTON */
+/*----------------- Titre */
 /* ------------------------------------- points de rupture des media queries */
 /* ----- Bordure de la zone de texte de la recherche */
 /* ----- Bordure de la zone du bouton de la recherche */
@@ -410,6 +411,53 @@ a:hover, a:active {
   outline: 0;
 }
 
+h1, h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #ee6d16;
+}
+
+h3, h4 {
+  font-family: "Poppins", sans-serif;
+  color: #ee6d16;
+}
+
+h5, h6 {
+  color: #ee6d16;
+}
+
+p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: #ee6d16;
+}
+
+h1 {
+  font-size: clamp(2rem, 3vw, 5rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 2.2vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(1.2rem, 2vw, 2.6rem);
+}
+
+h4 {
+  font-size: clamp(1.1rem, 2vw, 2.5rem);
+}
+
+h5 {
+  font-size: clamp(1rem, 2vw, 2.2rem);
+}
+
+h6 {
+  font-size: clamp(1rem, 1.5vw, 2rem);
+}
+
+p {
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+}
+
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
@@ -432,10 +480,8 @@ COMPOSANTES
 }
 
 .formation__titre {
-  font-size: 2rem;
   color: #ee6d16;
   margin: 10px 0px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 .formation__liste {
