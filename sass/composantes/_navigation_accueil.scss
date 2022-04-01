@@ -1,12 +1,25 @@
 .menu-accueil-container{ //nav
-    .menu{//ul
-        .menu-item{//li
-            a{ //a
-                .menu-item-description{ //span
 
+    .menu{//ul
+        display: flex;
+        justify-content: space-around;
+        .menu-item{//li
+            width: 15%;
+            padding: 10px;
+            background-color: $color__bouton__background;
+            a{ //a
+                color: $color__bouton__color;
+                font-size: 1.5rem;
+                .menu-item-description{ //span
+                    font-size: 1rem;
                 }    
             }
-            
+          &:hover{
+              background-color: $color__bouton__background--hover ;
+              a{
+                  color: $color__bouton__color--hover;
+              }
+          }  
         }
     }
 }

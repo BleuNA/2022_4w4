@@ -21,6 +21,7 @@ VARIABLES
 /* ---------------- SEARCH */
 /*----------------- BUTTON */
 /*----------------- Titre */
+/* ---------------- COULEUR BOUTON MENU-CATÉGORIE COURS */
 /* ------------------------------------- points de rupture des media queries */
 /* ----- Bordure de la zone de texte de la recherche */
 /* ----- Bordure de la zone du bouton de la recherche */
@@ -480,7 +481,6 @@ COMPOSANTES
 }
 
 .formation__titre {
-  color: #ee6d16;
   margin: 10px 0px;
 }
 
@@ -490,6 +490,8 @@ COMPOSANTES
 }
 
 .formation__cours {
+  background-repeat: no-repeat;
+  background-position: 97% 3%;
   background-color: #d1e9ff;
   box-shadow: #6a460b 2px -2px 12px;
   border-radius: 5px;
@@ -513,19 +515,42 @@ COMPOSANTES
 }
 
 .cours__titre {
-  font-size: 1.5rem;
-  color: #ee6d16;
   margin: 5px 0px;
 }
 
 .cours__sigle {
-  font-size: 1.2rem;
-  color: #8a5353;
   margin: 0;
 }
 
-.cours__description {
-  font-size: 1rem;
+/*.cours__description {
+}
+*/
+.web {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=globe-bold");
+}
+
+.jeu {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=games");
+}
+
+.comm {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=users");
+}
+
+.design {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=color_lens");
+}
+
+.utilitaire {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=tools-bold");
+}
+
+.video {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=device-camera-video");
+}
+
+.creation-3d {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=view_in_ar");
 }
 
 .site__header {
@@ -654,6 +679,57 @@ COMPOSANTES
   .home .menu-principal-container {
     display: none;
   }
+}
+
+.menu-categorie_cours-container .menu {
+  display: flex;
+  list-style-type: none;
+}
+
+.menu-categorie_cours-container .menu .menu-item {
+  margin: 0 15px;
+  background-color: #f06a6a;
+}
+
+.menu-categorie_cours-container .menu .menu-item a {
+  color: #f06a6a;
+  padding: 5px;
+}
+
+.menu-categorie_cours-container .menu:hover {
+  background-color: #7a49d4;
+}
+
+.menu-categorie_cours-container .menu:hover a {
+  color: #8be58f;
+}
+
+.menu-accueil-container .menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-accueil-container .menu .menu-item {
+  width: 15%;
+  padding: 10px;
+  background-color: #f06a6a;
+}
+
+.menu-accueil-container .menu .menu-item a {
+  color: #f06a6a;
+  font-size: 1.5rem;
+}
+
+.menu-accueil-container .menu .menu-item a .menu-item-description {
+  font-size: 1rem;
+}
+
+.menu-accueil-container .menu .menu-item:hover {
+  background-color: #7a49d4;
+}
+
+.menu-accueil-container .menu .menu-item:hover a {
+  color: #8be58f;
 }
 
 .site__footer {
