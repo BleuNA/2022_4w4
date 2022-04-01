@@ -1,4 +1,4 @@
-# TP #1 - 4W4 - Conception d'interface et développement Web
+# Lab #5 - 4W4 - Conception d'interface et développement Web
 ### Auteur : Damien Dufresne
 ### Date de remise : 18 Mars 2022
 
