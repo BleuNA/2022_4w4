@@ -3,16 +3,39 @@
     .menu{//ul
         display: flex;
         justify-content: space-around;
+        .accueil__cours .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=file-badge-bold");
+        }
+        .accueil__prof{}
+        .accueil__aide{}
+        .accueil__etudiant{}
         .menu-item{//li
-            width: 15%;
-            padding: 10px;
+            display: flex;
+            flex: 0 0 20%;
+            height: 175px;
             background-color: $color__bouton__background;
+
             a{ //a
+                display: flex;
+                flex-direction: column;
                 color: $color__bouton__color;
                 font-size: 1.5rem;
+                height: 100%;
+                text-align: center;
+                align-items: center;
                 .menu-item-description{ //span
                     font-size: 1rem;
-                }    
+                    text-align: center;
+                }   
+                .menu-item-icone{
+                    width: 2rem;
+                    height: 2rem;
+                    border: 1px solid blue;
+                    margin-top: auto;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                } 
             }
           &:hover{
               background-color: $color__bouton__background--hover ;
@@ -22,4 +45,4 @@
           }  
         }
     }
-}
+} // .menu-accueil-container
