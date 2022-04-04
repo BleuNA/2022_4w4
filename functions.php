@@ -128,4 +128,33 @@ function my_register_sidebars() {
     );
 }
 
+/**
+ * @param : WP_Query $query
+ */
+function cidw_4w4_pre_get_posts(WP_Query $query)
+{
+  if (!is_admin() && is_main_query() && is_category(array('web','cours','design','video','utilitaire','creation-3d','jeu'))) 
+    {
+    $ordre = get_query_var('ordre');
+    $cle = get_query_var('cletri');
+    
+    $query->set('order',  $ordre);
+    $query->set('orderby', $cle);
+
+    $query->set('posts_per_page', -1);
+    $query->set('orderby', '$cle');
+    $query->set('order',  '$ordre');
+   }
+}
+function cidw_4w4_query_vars($params){
+    
+
+    $params[] = "cletri";
+    $params[] = "ordre";
+    //$params["cletri"] = "title";
+    //var_dump($params); die();
+    return $params;
+}
+add_action('pre_get_posts', 'cidw_4w4_pre_get_posts');
+add_filter('query_vars', 'cidw_4w4_query_vars' );
 ?>
