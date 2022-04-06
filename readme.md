@@ -1,6 +1,6 @@
-# Lab #5 - 4W4 - Conception d'interface et développement Web
+# exercice #3 - 4W4 - Conception d'interface et développement Web
 ### Auteur : Damien Dufresne
-### Date de remise : 18 Mars 2022
+### Date de remise : 12 Avril 2022
 
 ```
 Cet exercice nous a permis d'introduire la structure avancé d'un thème Wordpress. Voici la structure utilisée:

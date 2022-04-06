@@ -133,18 +133,23 @@ function my_register_sidebars() {
  */
 function cidw_4w4_pre_get_posts(WP_Query $query)
 {
-  if (!is_admin() && is_main_query() && is_category(array('web','cours','design','video','utilitaire','creation-3d','jeu'))) 
-    {
-    $ordre = get_query_var('ordre');
-    $cle = get_query_var('cletri');
-    
-    $query->set('order',  $ordre);
-    $query->set('orderby', $cle);
+    /* On filtre avec une condition permettant de s'assurer qu'on accède à la liste des cours */
+    if (!is_admin() && is_main_query() && is_category(array('web','cours','design','video','utilitaire','creation-3d','jeu'))) 
+        {
 
-    $query->set('posts_per_page', -1);
-    $query->set('orderby', '$cle');
-    $query->set('order',  '$ordre');
-   }
+           
+        $ordre = get_query_var('ordre');
+        $cle = get_query_var('cletri');
+  
+        $query->set('order',  $ordre);
+        $query->set('orderby', $cle);
+
+        $query->set('posts_per_page', -1);
+      /*
+        $query->set('orderby', $cle);
+        $query->set('order',  $ordre);
+*/
+    }
 }
 function cidw_4w4_query_vars($params){
     
