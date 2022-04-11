@@ -12,14 +12,12 @@
     )) ?>
 <?php
     $ma_categorie= get_category_by_slug($url_categorie_slug);
-    echo "<h3>" . $ma_categorie->description. "</h3>"
+    echo "<h3>" . $ma_categorie->description. "</h3>";
 ?>
-
         <h2 class="formation__titre">Liste des cours du programme TIM</h2>
         <div class="formation__liste">
             <?php if (have_posts()):
                 while (have_posts()): the_post(); ?>
-                <?php if(is_category(array('cours', 'web', 'jeu', 'utilitaire', 'design', 'creation-3d', 'video'))) :?>
                 <?php get_template_part('gabarit/content','cours');?>
                 <?php endwhile ?>
                 <?php endif ?>
