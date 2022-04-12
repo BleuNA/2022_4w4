@@ -695,20 +695,18 @@ COMPOSANTES
 
 .menu-categorie_cours-container .menu .menu-item {
   margin: 0 15px;
-  background-color: #f06a6a;
+  background-color: #f6a167;
 }
 
 .menu-categorie_cours-container .menu .menu-item a {
-  color: #f06a6a;
+  color: #ade9f4;
   padding: 5px;
-}
-
-.menu-categorie_cours-container .menu:hover {
-  background-color: #7a49d4;
+  width: 100%;
+  height: 100%;
 }
 
 .menu-categorie_cours-container .menu:hover a {
-  color: #8be58f;
+  color: #07143b;
 }
 
 .menu-accueil-container .menu {
@@ -736,13 +734,13 @@ COMPOSANTES
   display: flex;
   flex: 0 0 20%;
   height: 175px;
-  background-color: #f06a6a;
+  background-color: #f6a167;
 }
 
 .menu-accueil-container .menu .menu-item a {
   display: flex;
   flex-direction: column;
-  color: #f06a6a;
+  color: #ade9f4;
   font-size: 1.5rem;
   height: 100%;
   text-align: center;
@@ -769,7 +767,7 @@ COMPOSANTES
 }
 
 .menu-accueil-container .menu .menu-item:hover a {
-  color: #8be58f;
+  color: #07143b;
 }
 
 .site__footer {

@@ -9,6 +9,8 @@
             a{ //a
                 color: $color__bouton__color;
                 padding: 5px;
+                width: 100%;
+                height: 100%;
                 .menu-item-description{ //span
 
                 }    
@@ -16,7 +18,6 @@
             
         }
     &:hover{
-        background-color: $color__bouton__background--hover;
         a{
             color: $color__bouton__color--hover;
         }
