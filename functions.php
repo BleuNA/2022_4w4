@@ -17,7 +17,7 @@ function cidw_4w4_register_nav_menu(){
         'menu_lien_externe'  => __( 'Menu lien externe', 'cidw_4w4' ),
         'menu_cours'  => __( 'Menu categorie cours', 'cidw_4w4' ),
         'menu_accueil'  => __( 'Menu accueil', 'cidw_4w4' ),
-        'menu_evenement'  => __( 'Menu evenement', 'cidw_4w4' )
+        'menu_accueil_evenement'  => __( 'Menu accueil evenement', 'cidw_4w4' )
     ) );
 }
 add_action( 'after_setup_theme', 'cidw_4w4_register_nav_menu', 0 );
@@ -135,21 +135,22 @@ function my_register_sidebars() {
 function cidw_4w4_pre_get_posts(WP_Query $query)
 {
     /* On filtre avec une condition permettant de s'assurer qu'on accède à la liste des cours */
-    if (!is_admin() && is_main_query() && is_category(array('web','cours','design','video','utilitaire','creation-3d','jeu'))) 
+    if (is_admin() 
+        || !$query->is_main_query()
+        || !$query->is_category(array('web','cours','design','video','utilitaire','creation-3d','jeu'))) 
+    {
+        return $query;
+    }
+    else
         {
-
-           
-        $ordre = get_query_var('ordre');
-        $cle = get_query_var('cletri');
+        $ordre = get_query_var('ordre', 'asc');
+        $cle = get_query_var('cletri', 'title');
   
         $query->set('order',  $ordre);
         $query->set('orderby', $cle);
 
         $query->set('posts_per_page', -1);
-      /*
-        $query->set('orderby', $cle);
-        $query->set('order',  $ordre);
-*/
+        return $query;
     }
 }
 function cidw_4w4_query_vars($params){

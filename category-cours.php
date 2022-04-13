@@ -2,10 +2,12 @@
 <main class="principal">
     <!-- <h1>category-cours.php</h1> -->
     <section class="formation">
-
-    <a href="?cletri=title&ordre=asc">Ascendant</a>
+<?php
+if($ordre = get_query_var('ordre', 'asc')):
+?>
+    <a href="?cletri=title&ordre=asc"></a>
     <a href="?cletri=title&ordre=desc">Descendant</a>
-    
+    <?php endif ?>
     <?php wp_nav_menu(array(
         "menu" => "categorie_cours",
         "container" => "nav"

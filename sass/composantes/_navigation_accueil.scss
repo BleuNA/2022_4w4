@@ -1,4 +1,4 @@
-.menu-accueil-container{ //nav
+.menu-accueil-container, .menu-evenement-container{ //nav
 
     .menu{//ul
         display: flex;
@@ -13,6 +13,19 @@
             background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
         }
         .accueil__etudiant .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
+        }
+        
+        .accueil__journee .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
+        }
+        .accueil__porte__1 .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
+        }
+        .accueil__porte__2 .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
+        }
+        .accueil__projet .menu-item-icone{
             background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
         }
         
