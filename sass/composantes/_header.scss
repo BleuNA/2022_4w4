@@ -44,6 +44,11 @@
       }
     }
 
+    .wp-social-links{
+      flex-wrap: nowrap;
+      align-items: center;
+    }
+
   .wp-block-social-links{
     flex-wrap: nowrap;
     align-items: center;
