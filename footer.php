@@ -23,7 +23,12 @@ wp_nav_menu(array(
     <section class="footer__auteur">Auteur : Damien Dufresne</section>
     </div>
 </footer>
-
+<div class="boite__modale">
+    <p class="boite__modale__text">
+        Ceci est un test pour vérifier le fonctionnement de la boîte modale
+    </p>
+</div>
+<?php wp_footer(); ?>
 </body>
 
 </html>
