@@ -14,7 +14,10 @@
     <?php show_admin_bar(true); ?>
     <style>
         .home::after{
-            
+            background-color: <?= get_theme_mod('background_body'); ?>
+        }
+        .site{
+            background-color: <?= get_theme_mod('background_body'); ?>
         }
     </style>
 </head>

@@ -36,6 +36,8 @@ theme name: Lab 5 Damien Dufresne
 .site__main{
     grid-area: main;
     background-color: $color__background-main;
+    display: flex;
+    flex-direction: column;
 }
 
 .site__footer{
