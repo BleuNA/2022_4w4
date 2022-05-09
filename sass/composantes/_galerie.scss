@@ -1,6 +1,9 @@
 .galerie{
-    width: 100%;
-    @media screen and(min-width: $largeur__media--mobil) {
-        width: 75%;
+    width: 75%;
+
+    @media screen and(max-width: $largeur__media--desktop) {
+        width: 100%;
+        
+        
     }
 }

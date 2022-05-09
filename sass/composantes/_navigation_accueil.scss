@@ -33,8 +33,6 @@
             display: flex;
             flex: 0 0 20%;
             height: 175px;
-            background-color: $color__bouton__background;
-
             a{ //a
                 display: flex;
                 flex-direction: column;
@@ -58,7 +56,6 @@
                 } 
             }
           &:hover{
-              background-color: $color__bouton__background--hover ;
               a{
                   color: $color__bouton__color--hover;
               }

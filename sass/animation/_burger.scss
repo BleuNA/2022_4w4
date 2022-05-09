@@ -12,7 +12,7 @@
         height: 100%;
         top:0;
         left:0;
-        background-color: black;
+        background-color: $color__search__boutton;
         transition : all .25s ease-in-out;
         &:nth-of-type(1){
             clip-path: polygon(0 0, 100% 0, 100% 20%, 0 20%);

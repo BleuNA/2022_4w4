@@ -5,7 +5,13 @@
   padding: 15px;
   &__colonne{ //.site__footer__colonne
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    @media screen and (min-width: $largeur__media--tablette) {
+      flex-direction: row;
+      justify-content: space-between;
+      } 
+    }
     section{//.site__footer__colonne section
       display: flex;
       flex-direction: column;
@@ -15,12 +21,11 @@
     .footer__adresse{ //.site__footer__colonne .footer__adresse
 
     }
-    .footer__article{ 
+    .footer__article{
 
     }
     .footer__lien{}
 
-  }
   &__ligne{
     display: flex;
     flex-direction: column;
@@ -38,13 +43,13 @@
     .footer__copyright{}
     .footer__menu{
       &__nav{ // .site__footer__menu
-        display: flex;
+
         &__ul{ // .site__footer__menu__ul
             display : flex;
             list-style-type: none;
             justify-content: center;
             .menu-item { // .site__footer__menu__ul .menu-item
-                margin : 10px 5px; 
+                margin : 10px 5px;
               a{ // .site__footer__menu__ul .menu-item a
                 display : flex;
                 align-items: center;
@@ -62,6 +67,8 @@
             }    
          }
       }
+
+    }
     }
     .footer__recherche{
       padding-left: 9%;
@@ -70,7 +77,6 @@
       }
     }
   }
-}
 #menu-simple{
   display: flex;
 }
