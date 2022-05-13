@@ -48,18 +48,33 @@
                 .menu-item-icone{
                     width: 2rem;
                     height: 2rem;
-                    border: 1px solid blue;
                     margin-top: auto;
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size: cover;
-                } 
+                }
             }
           &:hover{
               a{
-                  color: $color__bouton__color--hover;
+                color: $color__bouton__color--hover;           
+                animation-duration: 0.5s;
+                animation-name: jump;
+                animation-iteration-count: initial;
               }
           }  
         }
     }
 } // .menu-accueil-container
+@keyframes jump{
+    0%{
+    
+    }
+
+    50%{
+    transform: translateY(-20px);
+    }
+
+    100%{
+
+    }
+}
