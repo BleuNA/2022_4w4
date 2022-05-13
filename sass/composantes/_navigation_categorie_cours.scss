@@ -1,11 +1,21 @@
 .menu-categorie_cours-container{ //nav
     .menu{//ul
         display: flex;
+        flex-direction: column;
         list-style-type: none;
+        @media screen and (min-width: $largeur__media--tablette) {
+            flex-direction: row;
+        }
 
         .menu-item{//li
-            margin: 0 15px;
-            background-color: $color__bouton__background;
+            padding-top: 5px;
+            text-align: center;
+            margin: 0% 0.6%;
+            //background-color: $color__bouton__background;
+            @media screen and (min-width: $largeur__media--tablette) {
+                padding-top: 0px;
+                text-align: left;
+            }
             a{ //a
                 color: $color__bouton__color;
                 padding: 5px;

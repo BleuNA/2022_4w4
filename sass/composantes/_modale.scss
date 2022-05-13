@@ -13,8 +13,8 @@
     }
     &__ferme{
         position: absolute;
-        width: 20px;
-        height: 20px;
+        width: 27px;
+        height: 27px;
         top: 10px;
         right: 10px;
         z-index: 1;
@@ -23,10 +23,19 @@
 }
 /* Les dimensions de la boite modale */
 .boite__modale{
-    width : 50%;
-    height : 50%;
+    line-height: 140%;
+    padding: 15px;
+    padding-right: 10%;
+    width : 60%;
+    height : 60%;
     top:25%;
     left:25%;
+    @media screen and (min-width: $largeur__media--tablette){
+    line-height: 180%;
+    width : 50%;
+    height : 50%;
+    padding-right: 5%;
+    }
     &__texte{
         overflow: hidden;
     }

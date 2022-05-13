@@ -43,3 +43,24 @@ a{
 
     font-size: clamp(.8rem, 1vw, 1rem);
 }
+span{
+    font-size: clamp(.6rem, 1vw, 0.8rem);
+}
+.menu-item-165 span{
+    font-size: clamp(.8rem, 1vw, 1rem);
+}
+.menu-accueil-container .menu .menu-item a, .menu-evenement-container .menu .menu-item a{
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+.menu-accueil-container .menu .menu-item span, .menu-evenement-container .menu .menu-item span{
+    font-size: clamp(0.7rem, 1vw, 1rem);
+}
+.menu-principal-container .menu .menu-item a{
+    font-size: clamp(.8rem, 1vw, 1rem);
+}
+.menu-categorie_cours-container .menu .menu-item a{
+    font-size: clamp(.8rem, 1vw, 1rem);
+}
+article{
+    font-size: clamp(.7rem, 1vw, 1rem);
+}

@@ -465,6 +465,34 @@ a {
   font-size: clamp(0.8rem, 1vw, 1rem);
 }
 
+span {
+  font-size: clamp(0.6rem, 1vw, 0.8rem);
+}
+
+.menu-item-165 span {
+  font-size: clamp(0.8rem, 1vw, 1rem);
+}
+
+.menu-accueil-container .menu .menu-item a, .menu-evenement-container .menu .menu-item a {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.menu-accueil-container .menu .menu-item span, .menu-evenement-container .menu .menu-item span {
+  font-size: clamp(0.7rem, 1vw, 1rem);
+}
+
+.menu-principal-container .menu .menu-item a {
+  font-size: clamp(0.8rem, 1vw, 1rem);
+}
+
+.menu-categorie_cours-container .menu .menu-item a {
+  font-size: clamp(0.8rem, 1vw, 1rem);
+}
+
+article {
+  font-size: clamp(0.7rem, 1vw, 1rem);
+}
+
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
@@ -698,12 +726,27 @@ COMPOSANTES
 
 .menu-categorie_cours-container .menu {
   display: flex;
+  flex-direction: column;
   list-style-type: none;
 }
 
+@media screen and (min-width: 800px) {
+  .menu-categorie_cours-container .menu {
+    flex-direction: row;
+  }
+}
+
 .menu-categorie_cours-container .menu .menu-item {
-  margin: 0 15px;
-  background-color: #f6a167;
+  padding-top: 5px;
+  text-align: center;
+  margin: 0% 0.6%;
+}
+
+@media screen and (min-width: 800px) {
+  .menu-categorie_cours-container .menu .menu-item {
+    padding-top: 0px;
+    text-align: left;
+  }
 }
 
 .menu-categorie_cours-container .menu .menu-item a {
@@ -764,14 +807,12 @@ COMPOSANTES
   display: flex;
   flex-direction: column;
   color: #ade9f4;
-  font-size: 1.5rem;
   height: 100%;
   text-align: center;
   align-items: center;
 }
 
 .menu-accueil-container .menu .menu-item a .menu-item-description, .menu-evenement-container .menu .menu-item a .menu-item-description {
-  font-size: 1rem;
   text-align: center;
 }
 
@@ -821,7 +862,7 @@ COMPOSANTES
   }
 }
 
-.site__footer section {
+.site__footer__colonne section {
   display: flex;
   flex-direction: column;
   border: 1px solid orange;
@@ -981,8 +1022,8 @@ COMPOSANTES
 
 .boite__modale__ferme, .boite__carrousel__ferme {
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 27px;
+  height: 27px;
   top: 10px;
   right: 10px;
   z-index: 1;
@@ -990,10 +1031,22 @@ COMPOSANTES
 
 /* Les dimensions de la boite modale */
 .boite__modale {
-  width: 50%;
-  height: 50%;
+  line-height: 140%;
+  padding: 15px;
+  padding-right: 10%;
+  width: 60%;
+  height: 60%;
   top: 25%;
   left: 25%;
+}
+
+@media screen and (min-width: 800px) {
+  .boite__modale {
+    line-height: 180%;
+    width: 50%;
+    height: 50%;
+    padding-right: 5%;
+  }
 }
 
 .boite__modale__texte {
@@ -1053,49 +1106,61 @@ COMPOSANTES
 }
 
 .home .site__main h2 {
-  animation: couleur 6s linear;
-  animation-iteration-count: infinite;
+  color: white;
+  background: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, lime 14.28%, cyan 21.4%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);
+  background-size: 600vw 600vw;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: slide 9s linear infinite forwards;
 }
 
-@keyframes couleur {
-  100%, 0% {
-    color: red;
+@keyframes arc-en-ciel {
+  0% {
+    background-position-x: 0%;
   }
-  8% {
-    color: #ff7f00;
-  }
-  16% {
-    color: yellow;
-  }
-  25% {
-    color: chartreuse;
-  }
-  33% {
-    color: lime;
-  }
-  41% {
-    color: springgreen;
-  }
-  50% {
-    color: cyan;
-  }
-  58% {
-    color: #007fff;
-  }
-  66% {
-    color: blue;
-  }
-  75% {
-    color: #7f00ff;
-  }
-  83% {
-    color: magenta;
-  }
-  91% {
-    color: #ff007f;
+  100% {
+    background-position-x: 600vw;
   }
 }
 
+/*@keyframes couleur{
+	100%,0%{
+	    color: rgb(255,0,0);
+	}
+	8%{
+	    color: rgb(255,127,0);
+	}
+	16%{
+	    color: rgb(255,255,0);
+	}
+	25%{
+		color: rgb(127,255,0);
+	}
+	33%{
+		color: rgb(0,255,0);
+	}
+	41%{
+		color: rgb(0,255,127);
+	}
+	50%{
+		color: rgb(0,255,255);
+	}
+	58%{
+		color: rgb(0,127,255);
+	}
+	66%{
+		color: rgb(0,0,255);
+	}
+	75%{
+		color: rgb(127,0,255);
+	}
+	83%{
+		color: rgb(255,0,255);
+	}
+	91%{
+		color: rgb(255,0,127);
+	}
+}*/
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
