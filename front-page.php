@@ -16,6 +16,10 @@
     <?php wp_nav_menu(array(
     "menu" => "evenement",
     "container" => "nav")); ?>
+    <h2>Les ateliers à venir</h2>
+    <?php wp_nav_menu(array(
+    "menu" => "atelier",
+    "container" => "nav")); ?>
     <!-- <h1>---- Front-page.php ------</h1> -->
    <?php if (have_posts()): the_post(); ?>
         <h2><?php the_title() ?></h2>
