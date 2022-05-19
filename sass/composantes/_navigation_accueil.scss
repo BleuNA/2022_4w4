@@ -1,4 +1,4 @@
-.menu-accueil-container, .menu-evenement-container{ //nav
+.menu-accueil-container, .menu-evenement-container, .menu-atelier-container{ //nav
 
     .menu{//ul
         display: flex;
@@ -27,6 +27,18 @@
         }
         .accueil__projet .menu-item-icone{
             background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
+        }
+        .atelier__html__css .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/files.svg?ic=html");
+        }
+        .atelier__intro__git .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/files.svg?ic=git");
+        }
+        .atelier__intro__react .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/files.svg?ic=reactjs");
+        }
+        .atelier__css_avance .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/files.svg?ic=css");
         }
         
         .menu-item{//li
